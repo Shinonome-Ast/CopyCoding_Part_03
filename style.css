@@ -1,0 +1,386 @@
+body {
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	font-size: 1.5vw;
+	font-weight: bold;
+	letter-spacing: 0.2vw;
+	background-color: rgb(220, 220, 220);
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+/* header */
+.top-header {
+	display: flex;
+	align-items: center;
+	height: 8vh;
+}
+.logo {
+	flex: 1;
+	height: 3vh;
+	margin-left: 8vw;
+}
+.nav {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	font-size: 1.7vh;
+}
+.nav li {
+	margin-left: 4vw;
+}
+.sample {
+	display: inline;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	padding: 3.5vh 7vw;
+	font-size: 1.7vh;
+	text-align: center;
+}
+.header-image {
+	width: 100vw;
+	height: 68vh;
+}
+
+/* main */
+main {
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+main h1 {
+	margin: 10vh 0 0 0;
+	font-size: 3.5vw;
+	letter-spacing: 1vw;
+}
+/* NEWS */
+.top-news {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10vw;
+}
+.top-news p {
+	margin-top: 2vh;
+	position: relative;
+}
+.top-news p::after {
+	content: "";
+	position: absolute;
+	top: 200%;
+	left: 0;
+	width: 5vw;
+	background-color: rgb(0, 0, 0);
+	border: 0.1vw solid rgb(0, 0, 0);
+}
+
+.news-title {
+	display: flex;
+	justify-content: space-between;
+	margin: 5vh 10vw 15vh;
+	font-size: 1vw;
+	letter-spacing: 0.1vw;
+}
+.news-title span {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	padding: 0.1em 0.5em;
+	margin-left: 1em;
+}
+.news-text-2,
+.news-text-3 {
+	padding-left: 2vw;
+	border-left: 0.3vw solid rgba(128, 128, 128, 0.5);
+}
+/* about */
+.about-wrapper {
+	display: flex;
+}
+.about-image {
+	width: 50vw;
+	height: 100%;
+}
+.about-inner {
+	padding: 0 0 0 5vw;
+}
+.about-inner p {
+	margin-top: 2vh;
+	position: relative;
+}
+.about-inner > p::after {
+	content: "";
+	position: absolute;
+	top: 200%;
+	left: 0;
+	width: 5vw;
+	background-color: rgb(0, 0, 0);
+	border: 0.1vw solid rgb(0, 0, 0);
+}
+.about-text {
+	margin-top: 10vh;
+	margin-right: 5vw;
+	font-size: 1vw;
+	letter-spacing: 0.1vw;
+	line-height: 1.5;
+}
+/* Business */
+#business {
+	margin: 0 10vw;
+}
+.business-top > p {
+	margin-top: 2vh;
+	position: relative;
+}
+.business-top > p::after {
+	content: "";
+	position: absolute;
+	top: 200%;
+	left: 0;
+	width: 5vw;
+	background-color: rgb(0, 0, 0);
+	border: 0.1vw solid rgb(0, 0, 0);
+}
+.business-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 12vh;
+}
+.business-wrapper img {
+	width: 30vw;
+	height: 100%;
+}
+.business-wrapper h2 {
+	font-size: 1vw;
+	position: relative;
+	padding-left: 1.5vw;
+}
+.business-wrapper h2::before {
+	position: absolute;
+	top: 45%;
+	left: 0;
+	content: "";
+	border: 1px solid rgb(0, 0, 0);
+	width: 0.6vw;
+}
+.business-inner-left {
+	margin: 3vh 2vw 0 0;
+	display: flex;
+	flex-direction: column;
+}
+.business-inner-right {
+	margin: -3vh 0 0 2vw;
+	display: flex;
+	flex-direction: column;
+}
+/* company */
+#company {
+	height: 100%;
+}
+.company-wrapper {
+	position: relative;
+	width: 70vw;
+	height: 90vh;
+	margin: 0 auto;
+}
+.company-wrapper img {
+	/* margin-top: 20vh; */
+	width: 40vw;
+	height: 45vh;
+	position: absolute;
+	top: 25vh;
+	left: 50%;
+}
+.company-left {
+	width: 45vw;
+	height: 70vh;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	top: 10vh;
+	margin-left: -5vw;
+	padding-left: 5vw;
+}
+.company-title > p {
+	position: relative;
+}
+.company-title > p::after {
+	content: "";
+	position: absolute;
+	top: 200%;
+	left: 0;
+	width: 5vw;
+	background-color: rgb(0, 0, 0);
+	border: 0.1vw solid rgb(0, 0, 0);
+}
+.company-text {
+	margin-top: 8vh;
+}
+.company-text tr {
+	font-size: 1vw;
+	text-align: left;
+	line-height: 2;
+}
+.company-text th {
+	padding-right: 1.5vw;
+}
+/* footer */
+footer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 0 10vw;
+	font-size: 1vw;
+	background-color: rgb(255, 255, 255);
+}
+footer > small {
+	padding: 0;
+}
+.footer-logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3vh 0;
+}
+.footer-logo a img {
+	height: 3vh;
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		font-weight: 400;
+		width: 100vw;
+		font-size: 3vw;
+	}
+	main h1 {
+		font-weight: 500;
+		font-size: 10vw;
+	}
+	/* header */
+	.sample {
+		display: none;
+	}
+	.top-header {
+		flex-direction: column;
+		align-items: flex-start;
+		height: 100%;
+		margin: 3vh 5vw;
+	}
+	.logo,
+	.nav {
+		margin: 0;
+	}
+	.nav {
+		font-size: 4.5vw;
+	}
+	.nav li {
+		margin: 0;
+		margin-right: 4vw;
+	}
+	.header-image {
+		height: 100vh;
+	}
+	/* news */
+	.top-news p::after {
+		width: 10vw;
+	}
+	.news-title {
+		flex-direction: column;
+		font-size: 4vw;
+	}
+	.news-text-1,
+	.news-text-2,
+	.news-text-3 {
+		border: 0;
+		padding: 3vh 0;
+	}
+	/* about */
+	.about-wrapper {
+		flex-direction: column;
+	}
+	.about-image {
+		width: 100vw;
+		height: 70vh;
+	}
+	.about-inner p::after {
+		width: 10vw;
+	}
+	.about-text {
+		font-size: 3.5vw;
+		line-height: 2;
+	}
+	/* business */
+	#business {
+		margin: 0;
+		margin-left: 5vw;
+	}
+	.business-top > p::after {
+		width: 10vw;
+	}
+	.business-wrapper {
+		flex-direction: column;
+		align-items: center;
+		width: 90vw;
+	}
+	.business-wrapper img {
+		width: 90vw;
+	}
+	.business-wrapper h2 {
+		font-size: 3.5vw;
+		font-weight: 400;
+		padding-left: 5vw;
+	}
+	.business-wrapper h2::before {
+		width: 2vw;
+	}
+	.business-inner-left {
+		margin: 0;
+	}
+	.business-inner-right {
+		margin: 0;
+	}
+	/* company */
+	.company-wrapper {
+		width: 90vw;
+		height: 165vh;
+		margin: 0;
+	}
+	.company-wrapper img {
+		top: 95vh;
+		left: 5vw;
+		width: 90vw;
+		height: 70vh;
+	}
+	.company-left {
+		width: 85vw;
+		margin: 0 5vw;
+		padding-bottom: 10vh;
+	}
+	.company-text tr {
+		font-size: 3vw;
+	}
+	.company-title > p::after {
+		width: 10vw;
+	}
+	/* footer */
+	footer {
+		height: 100%;
+		padding: 0 5vw;
+	}
+	.footer-logo {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.footer-logo a img {
+		margin: 3vh 0 1vh;
+	}
+	footer small {
+		font-size: 2.5vw;
+	}
+}
